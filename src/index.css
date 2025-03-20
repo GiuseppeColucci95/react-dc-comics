@@ -1,5 +1,76 @@
+/* #region common */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 * {
   border: 0;
   margin: 0;
   box-sizing: border-box;
 }
+
+:root {
+  --dc-main-color: #0282f9;
+  --dc-button-bg-color: #797979;
+  --dc-darker-color: #1c1c1c;
+  --dc-navbar-color: #545b6b;
+  --dc-transparent: transparent;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+/* #endregion common */
+
+/* #region utilities */
+
+.container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+/* #endregion utilities */
+
+/* #region header */
+
+header {
+
+  .container {
+
+    .row {
+      display: flex;
+      justify-content: space-between;
+
+      img {
+        padding: 1.5rem;
+      }
+
+      ul {
+        display: flex;
+        column-gap: 2rem;
+        list-style: none;
+
+        li {
+          display: flex;
+          align-items: center;
+          border-bottom: 5px solid var(--dc-transparent);
+          font-weight: 600;
+
+        }
+      }
+    }
+  }
+}
+
+/* #endregion header */
+
+/* #region main */
+
+
+
+/* #endregion main */
+
+/* #region footer */
+
+
+
+/* #endregion footer */
