@@ -17,6 +17,7 @@
 
 body {
   font-family: "Open Sans", sans-serif;
+  font-variation-settings: "wdth" 75;
 }
 
 /* #endregion common */
@@ -53,8 +54,12 @@ header {
           display: flex;
           align-items: center;
           border-bottom: 5px solid var(--dc-transparent);
-          font-weight: 600;
 
+          a {
+            text-decoration: none;
+            color: var(--dc-navbar-color);
+            font-weight: 700;
+          }
         }
       }
     }
