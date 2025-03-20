@@ -13,6 +13,7 @@
   --dc-darker-color: #1c1c1c;
   --dc-navbar-color: #545b6b;
   --dc-transparent: transparent;
+  --dc-lighter-color: white;
 }
 
 body {
@@ -42,7 +43,7 @@ header {
       justify-content: space-between;
 
       img {
-        padding: 1.5rem;
+        padding: 1.5rem 0;
       }
 
       ul {
@@ -70,9 +71,60 @@ header {
 
 /* #region main */
 
+main {
 
+  height: 130px;
+  background-color: black;
+
+  .container {
+    height: 100%;
+
+    .row {
+      height: 100%;
+      display: flex;
+      align-items: center;
+
+      h2 {
+        color: var(--dc-lighter-color);
+      }
+    }
+  }
+
+
+}
 
 /* #endregion main */
+
+/* #region banner */
+
+#banner {
+
+  background-color: var(--dc-main-color);
+
+  .row {
+    display: flex;
+    justify-content: space-around;
+    padding: 2.5rem;
+
+    .col {
+      width: calc(100% / 12 * 5);
+      display: flex;
+      align-items: center;
+      column-gap: 0.5rem;
+
+      img {
+        height: 45%;
+      }
+
+      span {
+        color: var(--dc-lighter-color);
+        font-size: 0.75rem;
+      }
+    }
+  }
+}
+
+/* #endregion banner */
 
 /* #region footer */
 
