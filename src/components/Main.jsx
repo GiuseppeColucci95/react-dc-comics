@@ -3,13 +3,18 @@ export default function Main() {
   return (
     <main>
 
-      <div className="container">
+      <section id="jumbotron">
+      </section>
 
-        <div className="row">
-          <h2>--&gt; Content goes here &lt;--</h2>
+      <section id="series">
+        <div className="container">
+          <div id="button">CURRENT SERIES</div>
+          <div className="row">
+
+          </div>
+
         </div>
-
-      </div>
+      </section>
 
     </main>
   );

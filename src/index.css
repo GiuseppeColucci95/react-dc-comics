@@ -82,22 +82,38 @@ header {
 
 main {
 
-  height: 130px;
   background-color: black;
 
-  .container {
-    height: 100%;
+  #jumbotron {
+    height: 400px;
+    background-image: url('/jumbotron.jpg');
+  }
 
-    .row {
-      height: 100%;
-      display: flex;
-      align-items: center;
+  #series {
+    height: 500px;
+    background-color: var(--dc-darker-color);
 
-      h2 {
-        color: var(--dc-lighter-color);
+    .container {
+      position: relative;
+
+      #button {
+        display: inline-block;
+        padding: 0.75rem 2rem;
+        background-color: var(--dc-main-color);
+        color: white;
+        position: absolute;
+        top: -25px;
+        left: 0;
+      }
+
+      .row {
+        display: flex;
+        align-items: center;
+
       }
     }
   }
+
 
 
 }
