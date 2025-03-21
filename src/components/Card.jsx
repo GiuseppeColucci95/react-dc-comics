@@ -6,7 +6,7 @@ export default function Card({ image, title }) {
         <div className="img-container">
           <img src={image} alt={`${title} image`} />
         </div>
-        <div className="title">{title}</div>
+        <div className="title">{title.toUpperCase()}</div>
       </div>
     </div>
   );
