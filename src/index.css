@@ -30,6 +30,17 @@ body {
   margin: 0 auto;
 }
 
+.row {
+  display: flex;
+  margin: 0 -1rem;
+  flex-wrap: wrap;
+}
+
+.col-2 {
+  width: calc(100% / 12 * 2);
+  padding: 0 1rem;
+}
+
 /* #endregion utilities */
 
 /* #region header */
@@ -82,16 +93,15 @@ header {
 
 main {
 
-  background-color: black;
+  background-color: var(--dc-darker-color);
 
   #jumbotron {
-    height: 400px;
+    min-height: 400px;
     background-image: url('/jumbotron.jpg');
   }
 
   #series {
-    height: 500px;
-    background-color: var(--dc-darker-color);
+    min-height: 500px;
 
     .container {
       position: relative;
@@ -107,15 +117,46 @@ main {
       }
 
       .row {
+        padding: 3rem 1rem;
+        row-gap: 2rem;
+
+        .col-2 {
+
+          .card {
+
+            .img-container {
+              overflow-y: hidden;
+              aspect-ratio: 1;
+
+              img {
+                width: 100%;
+              }
+            }
+
+            .title {
+              margin: 1rem 0;
+              color: var(--dc-lighter-color);
+              font-size: 0.8rem;
+            }
+          }
+        }
+      }
+
+      .button {
         display: flex;
         align-items: center;
+        justify-content: center;
 
+        a {
+          text-decoration: none;
+          padding: 0.75rem 5rem;
+          margin: 0 0 2rem 0;
+          background-color: var(--dc-main-color);
+          color: var(--dc-lighter-color);
+        }
       }
     }
   }
-
-
-
 }
 
 /* #endregion main */
@@ -130,9 +171,10 @@ main {
     display: flex;
     justify-content: space-around;
     padding: 2rem;
+    flex-wrap: nowrap;
 
-    .col {
-      width: calc(100% / 12 * 5);
+    .col-5 {
+      width: calc((100% / 12) * 5);
       display: flex;
       align-items: center;
       column-gap: 0.5rem;
