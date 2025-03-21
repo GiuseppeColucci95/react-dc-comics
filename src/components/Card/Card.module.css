@@ -1,0 +1,17 @@
+.card {
+
+  .img_container {
+    overflow-y: hidden;
+    aspect-ratio: 1;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .title {
+    margin: 1rem 0;
+    color: var(--dc-lighter-color);
+    font-size: 0.8rem;
+  }
+}

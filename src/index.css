@@ -120,26 +120,7 @@ main {
         padding: 3rem 1rem;
         row-gap: 2rem;
 
-        .col-2 {
-
-          .card {
-
-            .img-container {
-              overflow-y: hidden;
-              aspect-ratio: 1;
-
-              img {
-                width: 100%;
-              }
-            }
-
-            .title {
-              margin: 1rem 0;
-              color: var(--dc-lighter-color);
-              font-size: 0.8rem;
-            }
-          }
-        }
+        .col-2 {}
       }
 
       .button {
