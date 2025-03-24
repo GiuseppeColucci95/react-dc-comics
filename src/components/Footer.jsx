@@ -1,4 +1,4 @@
-export default function Footer() {
+export default function Footer({ links }) {
 
   return (
     <footer>
@@ -12,21 +12,21 @@ export default function Footer() {
                 DC COMICS
               </h3>
               <ul>
-                <li><a href="">Characters</a></li>
-                <li><a href="">Comics</a></li>
-                <li><a href="">Movies</a></li>
-                <li><a href="">TV</a></li>
-                <li><a href="">Games</a></li>
-                <li><a href="">Videos</a></li>
-                <li><a href="">News</a></li>
+                {
+                  links.dcComics.map(comic =>
+                    (<li key={comic.id}><a href={comic.href}>{comic.title}</a></li>))
+                }
               </ul>
 
               <h3>
                 SHOP
               </h3>
               <ul>
-                <li><a href="">Shop DC</a></li>
-                <li><a href="">Shop DC Collectibles</a></li>
+                {
+                  links.shop.map(link =>
+                  (<li key={link.id}><a href={link.href}>{link.title}</a></li>
+                  ))
+                }
               </ul>
             </div>
             <div className="col-1">
@@ -34,17 +34,13 @@ export default function Footer() {
                 DC
               </h3>
               <ul>
-                <li><a href="">Terms Of Use</a></li>
-                <li><a href="">Privacy policy (New)</a></li>
-                <li><a href="">Ad Choices</a></li>
-                <li><a href="">Advertising</a></li>
-                <li><a href="">Jobs</a></li>
-                <li><a href="">Subscriptions</a></li>
-                <li><a href="">Talent Workshops</a></li>
-                <li><a href="">CPSC Certificates</a></li>
-                <li><a href="">Ratings</a></li>
-                <li><a href="">Shop Help</a></li>
-                <li><a href="">Contact Us</a></li>
+
+                {
+                  links.dc.map(link =>
+                  (<li key={link.id}><a href={link.href}>{link.title}</a></li>
+                  ))
+                }
+
               </ul>
             </div>
             <div className="col-1">
@@ -52,11 +48,11 @@ export default function Footer() {
                 SITES
               </h3>
               <ul>
-                <li><a href="">DC</a></li>
-                <li><a href="">MAD Magazine</a></li>
-                <li><a href="">DC Kids</a></li>
-                <li><a href="">DC Universe</a></li>
-                <li><a href="">DC Power Visa</a></li>
+                {
+                  links.sites.map(link =>
+                  (<li key={link.id}><a href={link.href}>{link.title}</a></li>
+                  ))
+                }
               </ul>
             </div>
           </div>
@@ -79,6 +75,7 @@ export default function Footer() {
           </div>
         </div>
       </section>
+
     </footer >
   );
 }

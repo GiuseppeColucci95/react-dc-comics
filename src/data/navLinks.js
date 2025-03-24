@@ -51,42 +51,6 @@ const navLinks = [
   }
 ];
 
-const footerLinksDcComics = [
-  {
-    id: 1,
-    href: '#',
-    title: 'Characters'
-  },
-  {
-    id: 2,
-    href: '#',
-    title: 'Comics'
-  },
-  {
-    id: 3,
-    href: '#',
-    title: 'Movies'
-  },
-  {
-    id: 4,
-    href: '#',
-    title: 'TV'
-  },
-  {
-    id: 5,
-    href: '#',
-    title: 'Games'
-  },
-  {
-    id: 6,
-    href: '#',
-    title: 'Videos'
-  },
-  {
-    id: 7,
-    href: '#',
-    title: 'News'
-  },
-];
 
-export default { navLinks, footerLinksDcComics };
+
+export default navLinks;
