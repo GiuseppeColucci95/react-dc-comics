@@ -1,8 +1,7 @@
 import CardList from './CardList';
 import Jumbotron from './Jumbotron';
 
-
-export default function Main() {
+export default function Main({ array }) {
 
   return (
     <main>
@@ -15,7 +14,7 @@ export default function Main() {
         <div className="container">
           <div id="button">CURRENT SERIES</div>
 
-          <CardList></CardList>
+          <CardList array={array}></CardList>
           {/* /Cardlist */}
 
           <div className="button">

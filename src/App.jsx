@@ -6,14 +6,15 @@ import Footer from './components/Footer';
 import comics from './data/comics';
 import links from './data/links';
 
+
 function App() {
 
   return (
     <>
-      <Header content={links}></Header>
-      <Main></Main>
+      <Header links={links.navLinks}></Header>
+      <Main array={comics}></Main>
       <Banner></Banner>
-      <Footer></Footer>
+      <Footer links={links.footerLinksDcComics}></Footer>
     </>
   );
 }
